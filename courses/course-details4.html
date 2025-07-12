@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI/UX Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TrainXpert</a></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+         <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="theme-btn" onclick="toggleDarkMode(event)">🌙</a></li>
+      </ul>
+    </nav>
+  </header><br><br>
+
+  <section class="course-detail fade-in">
+    <div class="course-container">
+    <div class="course-image">
+      <img src="images/java.jpeg" alt="java" width="400px" height="350px">
+    <br><br></div>
+  
+  <div class="course-description">
+    <h2>☕Java</h2><br>
+    <p>
+   🎓Learn one of the most powerful and widely used programming languages! This course covers core Java concepts like OOP (Object-Oriented Programming), data types, loops, and exception handling, along with practical coding exercises and mini-projects. Ideal for beginners and those preparing for tech interviews.
+    </p>
+    <ul>
+      <li>✅Beginner-friendly</li>
+      <li>✅Hands-on coding practice</li>
+      <li>✅Certificate + Career guidance</li>
+    </ul><br>
+    <a href="enroll.html">
+  <button class="btn-small">Enroll Now</button>
+</a>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 TrainXpert. Crafted with ❤️ for learners.</p>
+  </footer>
+
+    <script>
+function revealOnScroll() {
+  document.querySelectorAll('.fade-in').forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const isVisible = top < window.innerHeight - 100;
+    if (isVisible) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+function toggleDarkMode(e) {
+  e.preventDefault(); 
+  const body = document.body;
+  const icon = document.getElementById("theme-btn");
+
+  body.classList.toggle("dark-mode");
+  icon.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
+}
+
+  </script>
+</body>
+</html>
+
+</body>
+</html>
