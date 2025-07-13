@@ -54,10 +54,13 @@ header {
   color: white;
   text-decoration: none;
   font-weight: 500;
-      transition: color 0.3s;
+  transition: background-color 0.3s ease;
+  padding: 2px 3px;
+  border-radius: 8px;
 }
 .nav-links li a:hover {
-  color: #97e2f5;
+  background-color: #3282b8;
+  color: #033d69;
 }
 @keyframes slideDown {
       from { transform: translateY(-100%); opacity: 0; }
