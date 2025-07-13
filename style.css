@@ -23,8 +23,16 @@ header {
     }
 
 /* Navbar */
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+      transform: scale(1.1);
+    }
 .navbar {
-  position: flex;
+  position: fixed;
   top: 0;
   width: 100%;
   background: linear-gradient(90deg,#0f4c75,#3282b8);
@@ -33,34 +41,33 @@ header {
   align-items: center;
   color: white;
   padding: 15px 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   animation: slideDown 1s ease-in-out;
   z-index: 999;
 }
-.navbar .logo {
-  font-size: 24px;
-  font-weight: bold;
-  transition: transform 0.3s ease;
+.navbar ul
+{
+  list-style-type: none;
+  background-color: linear-gradient(90deg,#0f4c75,#3282b8);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
 }
-.logo:hover {
-      transform: scale(1.1);
-    }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-.nav-links li a {
+.navbar a
+{
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-  padding: 2px 3px;
-  border-radius: 8px;
+  padding: 15px;
+  display: block;
+  text-align: center;
 }
-.nav-links li a:hover {
-  background-color: #3282b8;
-  color: #033d69;
+.navbar a:hover
+{
+  background-color: #88cfff;
+}
+.navbar li
+{
+  float: left;
 }
 @keyframes slideDown {
       from { transform: translateY(-100%); opacity: 0; }
