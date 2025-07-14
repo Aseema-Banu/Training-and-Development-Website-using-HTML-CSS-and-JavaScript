@@ -6,7 +6,7 @@ Welcome to the **Training and Development Website** — a beautifully crafted, r
 
 ## ✨ Highlights
 
-- ✅ Fully responsive layout for desktop and mobile
+- ✅ Fully responsive layout for desktop
 - 📂 Well-structured multi-page website (Home, About, Courses, Contact, Enroll)
 - 🧑‍🏫 Multiple course detail pages with descriptions
 - 🖼️ Organized image assets inside `/images` folder
@@ -21,11 +21,11 @@ Welcome to the **Training and Development Website** — a beautifully crafted, r
 ├── index.html # Homepage
 ├── about.html # About us page
 ├── contact.html # Contact form page
+├── course.html
 ├── enroll.html # Enrollment page
 ├── style.css # Main stylesheet
 ├── README.md # Project documentation
 ├── courses/ # Course-related pages
-│ ├── courses.html
 │ ├── course-details.html
 │ ├── course-details1.html to course-details13.html
 ├── images/ # All images and banners
